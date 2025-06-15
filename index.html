@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="expence.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2> Expense Tracker</h2>
+
+    <div class="summary-boxes">
+      <div class="box income-box">
+        Income <br> ₹<span id="income">0</span>
+      </div>
+      <div class="box expense-box">
+        Expense <br> ₹<span id="expense">0</span>
+      </div>
+    </div>
+
+    <div class="balance">Balance: ₹<span id="balance">0</span></div>
+
+    <form id="incomeForm">
+      <input type="text" id="incomeText" placeholder="Income Description" required>
+      <input type="number" id="incomeAmount" placeholder="Amount" required>
+      <button type="submit">Add Income</button>
+    </form>
+
+    <form id="expenseForm">
+      <input type="text" id="expenseText" placeholder="Expense Description" required>
+      <input type="number" id="expenseAmount" placeholder="Amount" required>
+      <button type="submit">Add Expense</button>
+    </form>
+
+    <div class="transactions" id="transactionList"></div>
+  </div>
+
+  <script src="expence.js"></script>
+</body>
+</html>
